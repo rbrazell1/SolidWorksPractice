@@ -1,0 +1,14 @@
+﻿"module"= 1.5mm
+
+"No. of teeth" = 12
+
+"MiddleCircle"="module"*"No. of teeth"
+
+"OutsideCircle"=("No. of teeth" + 2)* "module"
+
+"DistanceFromOutsideToInnerCircle" = "module" * IIF ( "module" = > 1.25 , 2.25 , 2.4 )
+
+"AngleOfTeethSpacing"=180 /  "No. of teeth"
+
+"D1@Fillet1"= .3 * "module"
+
